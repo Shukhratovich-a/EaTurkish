@@ -1,0 +1,85 @@
+@import "../../Scss/Variables.scss";
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item {
+  & + & {
+    margin-left: 40px;
+  }
+}
+
+.nav__link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  color: inherit;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav__list {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__item {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    position: fixed;
+    top: 108px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $darkRed;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+
+    &--open {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item {
+    width: 100%;
+    margin-top: 20px;
+
+    & + & {
+      margin: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .nav__link{
+    display: block;
+    text-align: center;
+  }
+}

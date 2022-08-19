@@ -8,8 +8,8 @@ import "./App.scss";
 function App() {
   return (
     <Routes>
-      <Route path="/*" element={<ClientApp />} />
-      <Route path="/admin/*" element={<AdminApp />} />
+      <Route path={"/*"} element={<ClientApp />} />
+      <Route path={"/admin/*"} element={<AdminApp />} />
     </Routes>
   );
 }

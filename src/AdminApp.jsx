@@ -4,7 +4,7 @@ const ClientApp = () => {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<>Hi. I'm admin</>} />
+        <Route path={"/"} element={<>Hi. I'm admin</>} />
       </Routes>
     </div>
   );

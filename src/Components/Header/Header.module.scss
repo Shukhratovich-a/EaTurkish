@@ -1,0 +1,62 @@
+@import "../../Scss/Variables.scss";
+
+.header {
+  padding: 26px 0;
+  background-color: $red;
+  color: $white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__link {
+  display: inline-block;
+  margin-right: auto;
+}
+
+.header__logo {
+  width: 135px;
+  height: 47px;
+  object-fit: contain;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header__link {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    position: relative;
+    padding: 32px 0;
+
+    .container {
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .header__logo {
+    width: 125px;
+    height: 44px;
+  }
+
+  .header__burger {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+  }
+}
