@@ -40,7 +40,7 @@ const Header = () => {
         <Nav />
 
         {width > 700 ? null : (
-          <button className={styles.header__burger} onClick={() => setIsOpen(!isOpen)}>
+          <button className={`${styles.header__burger}`} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <Close /> : <Burger />}
           </button>
         )}
