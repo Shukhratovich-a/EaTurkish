@@ -1,8 +1,17 @@
-import logo from "./logo.svg";
+import { Routes, Route } from "react-router-dom";
+
+import ClientApp from "./ClientApp";
+import AdminApp from "./AdminApp";
+
 import "./App.scss";
 
 function App() {
-  return <div className="app"></div>;
+  return (
+    <Routes>
+      <Route path="/*" element={<ClientApp />} />
+      <Route path="/admin/*" element={<AdminApp />} />
+    </Routes>
+  );
 }
 
 export default App;
