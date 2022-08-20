@@ -2,7 +2,7 @@ import React from "react";
 
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
-import Button from "../Lib/Button/Button";
+import Button from "../Lib/Buttons/Button/Button";
 
 import Image from "../../Assets/Images/Hero/Hero.png";
 
@@ -12,12 +12,6 @@ const Hero = () => {
   const { width, height } = useWindowDimensions();
   const [between, setBetween] = React.useState(width <= 550 ? 4 : width <= 1150 ? 6 : 7);
   const circles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
-  // React.useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     window.addEventListener("scroll", () => (window.pageYOffset = 100));
-  //   }
-  // }, []);
 
   return (
     <section className={`${styles.hero}`}>

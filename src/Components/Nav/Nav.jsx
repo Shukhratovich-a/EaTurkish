@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 import useNav from "../../Hooks/useNav";
 
-import Button from "../Lib/Button/Button";
+import Button from "../Lib/Buttons/Button/Button";
 
 import styles from "./Nav.module.scss";
 

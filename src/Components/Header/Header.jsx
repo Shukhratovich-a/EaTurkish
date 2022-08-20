@@ -6,7 +6,7 @@ import useNav from "../../Hooks/useNav";
 
 import Nav from "../Nav/Nav";
 
-import Button from "../Lib/Button/Button";
+import Button from "../Lib/Buttons/Button/Button";
 
 import Logo from "../../Assets/Images/Logo/Logo.webp";
 import Burger from "../Lib/Icons/Burger";

@@ -1,0 +1,27 @@
+@import "../../Scss/Variables.scss";
+
+.popular {
+  padding: 120px 0;
+  background-color: $bgGray;
+}
+
+.popular__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.popular__heading {
+  padding-bottom: 10px;
+}
+
+.popular__top__right {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.popular__swiper__button--prev {
+  transform: rotate(180deg);
+  margin-right: 20px;
+}
