@@ -12,7 +12,8 @@
   color: $black;
   cursor: pointer;
 
-  &:disabled{
-    opacity: 0.2;
+  &:disabled {
+    color: $darkGray;
+    border-color: $darkGray;
   }
 }

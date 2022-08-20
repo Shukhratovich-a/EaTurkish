@@ -1,0 +1,29 @@
+@import "../../../../Scss/Variables.scss";
+
+.heading {
+  margin: 0;
+  font-family: "CeraRoundPro", "OpenSans", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $red;
+}
+
+@media only screen and (max-width: 550px) {
+  .heading {
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .heading {
+    text-align: left;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

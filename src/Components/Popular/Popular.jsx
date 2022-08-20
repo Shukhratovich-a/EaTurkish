@@ -3,14 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import PopularProducts from "../../Datas/PopularProducts";
 
-import HeadingSmall from "../Lib/Headings/HeadingSmall";
+import HeadingSmall from "../Lib/Headings/HeadingSmall/HeadingSmall";
 import NavigateButton from "../Lib/Buttons/NavigateButton/NavigateButton";
 import PopularCard from "../PopularCard/PopularCard";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
-import './PopularSwiper.scss'
 import styles from "./Popular.module.scss";
 
 const Popular = () => {
@@ -58,7 +57,7 @@ const Popular = () => {
 
         <Swiper
           ref={sliderRef}
-          slidesPerView={4}
+          slidesPerView={"auto"}
           spaceBetween={20}
           slidesPerGroup={1}
           onSlideChange={() => {
@@ -69,7 +68,7 @@ const Popular = () => {
         >
           {products.length > 0 &&
             products.map((product) => (
-              <SwiperSlide key={product.id}>
+              <SwiperSlide className={styles.popular__slide} key={product.id}>
                 <PopularCard product={product} />
               </SwiperSlide>
             ))}

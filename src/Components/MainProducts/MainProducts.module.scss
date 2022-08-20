@@ -1,0 +1,59 @@
+@import "../../Scss/Variables.scss";
+
+.products {
+  background-color: $white;
+  overflow: hidden;
+
+  .container {
+    padding: 120px 20px;
+  }
+}
+
+.products__heading {
+  margin-bottom: 60px;
+}
+
+.products__menu__list {
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+.products__menu__item {
+  width: auto;
+}
+
+.products__menu__button {
+  width: auto;
+  padding: 10px 30px;
+  color: $black;
+  box-shadow: inset 0px 0px 0px 1px $red;
+
+  &:hover {
+    color: $white;
+    background-color: $red;
+  }
+
+  &--active {
+    color: $white;
+    background-color: $red;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .products {
+    background-color: $white;
+
+    .container {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .products__heading {
+    margin-bottom: 40px;
+  }
+
+  .products__menu__button {
+    padding: 5px 20px;
+  }
+}

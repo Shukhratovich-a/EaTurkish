@@ -1,8 +1,27 @@
 @import "../../Scss/Variables.scss";
 
 .popular {
-  padding: 120px 0;
   background-color: $bgGray;
+
+  .container {
+    position: relative;
+    padding: 120px 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      z-index: 9;
+      transform: translateY(50%);
+      display: block;
+      width: 93px;
+      height: 93px;
+      background-image: url("../../Assets/Icons/Symbol.svg");
+      background-size: contain;
+      background-position: center;
+    }
+  }
 }
 
 .popular__top {
@@ -24,4 +43,55 @@
 .popular__swiper__button--prev {
   transform: rotate(180deg);
   margin-right: 20px;
+}
+
+.popular__list {
+  padding: 20px;
+  padding-bottom: 30px;
+  margin: -20px;
+  margin-bottom: -30px;
+}
+
+.popular__slide {
+  max-width: 310px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .popular {
+    .container {
+      padding: 100px 20px;
+
+      &::before {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .popular {
+    .container {
+      padding: 80px 20px;
+
+      &::before {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+
+  .popular__top {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .popular__heading {
+    padding: 0;
+  }
+
+  .popular__top__right {
+    display: none;
+  }
 }
