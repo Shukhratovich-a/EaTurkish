@@ -1,7 +1,7 @@
-import Popular1 from "../Assets/Images/Popular/Popular1.png";
-import Popular2 from "../Assets/Images/Popular/Popular2.png";
-import Popular3 from "../Assets/Images/Popular/Popular3.png";
-import Popular4 from "../Assets/Images/Popular/Popular4.png";
+import Popular1 from "../Assets/Images/Popular/Image1.png";
+import Popular2 from "../Assets/Images/Popular/Image2.png";
+import Popular3 from "../Assets/Images/Popular/Image3.png";
+import Popular4 from "../Assets/Images/Popular/Image4.png";
 
 const PopularProducts = [
   {

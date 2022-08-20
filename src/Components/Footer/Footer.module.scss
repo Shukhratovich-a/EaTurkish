@@ -1,0 +1,145 @@
+@import "../../Scss/Variables.scss";
+
+.footer {
+  padding-top: 200px;
+  color: $white;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 10px;
+  padding-bottom: 40px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:nth-child(2) {
+    .footer__wrapper__text {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.footer__wrapper__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-top: 25px;
+  font-family: "CeraRoundPro", "OpenSans", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.footer__image {
+  margin-bottom: 32px;
+}
+
+.footer__wrapper__text {
+  max-width: 440px;
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.footer__wrapper__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__social {
+  & + & {
+    margin-left: 16px;
+  }
+}
+
+.footer__social__link {
+  color: inherit;
+}
+
+.footer__wrapper__copyright {
+  margin: 0;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+@media only screen and (max-width: 1050px) {
+  .footer__inner {
+    padding: 100px 0px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .footer__wrapper {
+    & + & {
+      margin-top: 40px;
+    }
+
+    &:nth-child(2) {
+      .footer__wrapper__text {
+        margin-bottom: 37px;
+      }
+    }
+  }
+
+  .footer__wrapper__heading {
+    padding-top: 0;
+  }
+
+  .footer__socials {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .footer__wrapper {
+    & + & {
+      margin-top: 40px;
+    }
+
+    &:nth-child(2) {
+      .footer__wrapper__text {
+        max-width: 295px;
+      }
+    }
+  }
+
+  .footer__image {
+    max-width: 335px;
+    width: 100%;
+    height: auto;
+  }
+}

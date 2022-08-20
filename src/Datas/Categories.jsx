@@ -1,4 +1,4 @@
-const Types = [
+const Categories = [
   {
     id: 1,
     title: "all",
@@ -41,4 +41,4 @@ const Types = [
   },
 ];
 
-export default Types;
+export default Categories;
