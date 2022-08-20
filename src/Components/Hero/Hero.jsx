@@ -27,7 +27,9 @@ const Hero = () => {
               facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus
             </p>
 
-            <Button className={`${styles.hero__button}`}>Explore Menu</Button>
+            <Button className={`${styles.hero__button}`} to={"/menu"}>
+              Explore Menu
+            </Button>
           </div>
 
           <div className={`${styles.hero__left}`}>
